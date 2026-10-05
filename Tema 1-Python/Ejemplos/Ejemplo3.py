@@ -1,7 +1,6 @@
 nombre = input("Introduce tu nombre: ")
 
-edad = input("Introduce tu edad: ")
+edad = int(input("Introduce tu edad: "))
 
-resul = int(edad) * 12
-print("Hola, " + nombre + " tienes " + str(resul) + " meses de edad.")
+print(f"Tu nombre es {nombre}, y tienes {edad * 12} meses")
 
