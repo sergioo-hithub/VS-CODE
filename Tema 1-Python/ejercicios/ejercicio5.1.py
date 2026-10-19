@@ -6,4 +6,3 @@ res = int(eval(f"{num1} {operador} {num2}"))
 
 print(f"El resultado de la operación es: {res}")
 
-
