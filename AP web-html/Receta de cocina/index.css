@@ -48,3 +48,8 @@ footer {
     margin-bottom: 20px;
 }
 
+.Características {
+    list-style: square;
+    padding-left: 20px;
+    
+}
