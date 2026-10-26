@@ -1,0 +1,162 @@
+* ==========================================================
+   EJERCICIO 02 - PÁGINA WEB SOBRE QUEEN
+   Hoja de estilos comentada
+   ========================================================== */
+
+/* El selector universal aplica border-box a TODOS los elementos.
+   Así, el padding y los bordes quedan incluidos en su ancho declarado. */
+* {
+    box-sizing: border-box;
+}
+
+/* ----------------------------------------------------------
+   1. ESTRUCTURA GENERAL
+   ---------------------------------------------------------- */
+body {
+    margin: 0;
+    min-height: 100vh;   /* Alternativa para navegadores sin soporte de dvh. */
+    min-height: 100dvh;  /* Se adapta a las barras móviles del navegador. */
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #F0F0F0;
+
+    /* El enunciado pide colocar header, main y footer en columna.
+       Flexbox se usa aquí solo para organizar esos tres bloques. */
+    display: flex;
+    flex-direction: column;
+}
+
+/* ----------------------------------------------------------
+   2. CABECERA
+   ---------------------------------------------------------- */
+/* Solución exigida por el enunciado: cabecera con Flexbox.
+   justify-content centra el h1 en el eje principal (horizontal)
+   y align-items lo centra en el eje transversal (vertical).
+   text-align centra el texto dentro del propio h1. */
+header {
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0; /* Eliminamos el margen predeterminado del h1. */
+    text-align: center;
+}
+
+h1,
+h2 {
+    font-family: Georgia, serif;
+    color: #2C3E50;
+}
+
+/* ----------------------------------------------------------
+   3. CONTENIDO PRINCIPAL
+   ---------------------------------------------------------- */
+main {
+    background-color: #FFF;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+
+    /* Superior: 0; laterales: auto (centra la tarjeta);
+       inferior: auto (absorbe el espacio vertical sobrante en
+       este Flexbox de columnas y deja el footer al fondo).
+       Con flex: 1, empujamos el footer hacia el fondo. */
+    margin: 0 auto;
+    flex: 1;
+
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+/* ----------------------------------------------------------
+   4. IMAGEN DE LA BANDA
+   ---------------------------------------------------------- */
+.imagen-banda {
+    /* img es un elemento en línea de forma predeterminada;
+       por eso se puede centrar desde su contenedor con text-align. */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.imagen-banda img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* VARIANTE ALTERNATIVA PARA CENTRAR LA IMAGEN (dejar comentada por ahora):
+   Si convertimos la imagen en elemento de bloque, text-align
+   del contenedor ya no la centra. En ese caso podemos usar:
+
+.imagen-banda img {
+    display: block;
+    margin: 0 auto;
+}
+
+   Se conservarian el resto de reglas de .imagen-banda img
+   (width y border-radius).
+*/
+
+/* ----------------------------------------------------------
+   5. LISTA DE INTEGRANTES
+   ---------------------------------------------------------- */
+.lista-integrantes ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* ----------------------------------------------------------
+   6. TABLA DE DISCOS
+   ---------------------------------------------------------- */
+.tabla-exitos table {
+    border-collapse: collapse; /* Une los bordes de celdas contiguas. */
+    margin: 0 auto;       /* Centra la tabla y deja espacio debajo. */
+    margin-bottom: 20px;
+    /* Esto conjuntamente equivale a margin: 0 auto 20px; */
+}
+
+.tabla-exitos table,
+.tabla-exitos th,
+.tabla-exitos td {
+    border: 1px solid #DDD;
+}
+
+.tabla-exitos th {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+}
+
+.tabla-exitos th,
+.tabla-exitos td {
+    padding: 10px;
+}
+
+.tabla-exitos td {
+    text-align: left;
+    white-space: nowrap; /* Impide los saltos de línea dentro de celdas.
+    Esto puede provocar desbordamientos en pantallas estrechas. */
+}
+
+/* ----------------------------------------------------------
+   7. ENLACE A LA WEB OFICIAL
+   ---------------------------------------------------------- */
+.enlace-web a {
+    color: #E74C3C;
+    text-decoration: none;  /* Sin subrayado */
+    font-weight: bold;  /* Negrita */
+}
+
+/* :hover se aplica mientras el puntero está sobre el enlace. */
+.enlace-web a:hover {
+    color: #C0392B;
+}
+
+/* ----------------------------------------------------------
+   8. PIE DE PAGINA
+   ---------------------------------------------------------- */
+footer {
+    margin-top: 20px;
+    color: #7F8C8D;
+    text-align: center;
+    font-size: 14px;
+}
