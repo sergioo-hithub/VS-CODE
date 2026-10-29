@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     box-sizing: border-box;
@@ -5,31 +6,27 @@ body {
     padding: 0%;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    background-color: beige;
+    min-height: 100vh;
+    color: #333;
 }
-
+/* Caebezera */
 header {
     background-color: #f5a623;
     color: white;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
     justify-content: center;
-    padding: 0%;
+    padding: 1rem;
 }
-
+header h1 {
+    margin: 0;
+}
+/* Contenido principal */
 main {
-    background-color: white;
+    background-color: beige;
     padding: 2rem;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 15px;
+    flex: 1;
 }
 
 .Receta {
@@ -37,19 +34,111 @@ footer {
     color: #333;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     max-width: 800px;
+    margin: 0 auto;
     text-align: center;
     border-radius: 10px;
-    padding: 10px;
-}
-.imagen-receta img {
-    width: 10%;
-    border-radius: 10px;
-    max-width: 100%;
-    margin-bottom: 20px;
+    padding: 10px 20px 20px;
 }
 
-.Características {
-    list-style: square;
-    padding-left: 20px;
-    
+.Receta h1,
+.Receta h2, {
+    color: #23c4f5;
 }
+
+.Receta h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.imagen-receta {
+    text-align: center;
+}
+.imagen-receta img {
+    display: block;
+    width: 100%;
+    max-width: 325px;
+    height: auto;
+    margin: 0 auto 10px;
+    border-radius: 10px;
+}
+/* Características */
+.Características ul {
+    list-style-type: square;
+    padding-left: 17px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.Características li {
+    margin-bottom: 5px;
+}
+
+.Receta strong {
+    color: #23c4f5;
+
+}
+/* Tabla de ingredientes */
+.ingredientes h2,
+.elaboracion h2 {
+    text-align: left;
+    margin-bottom: 6px;
+}
+.ingredientes {
+    margin-top: 0.5rem;
+}
+.ingredientes table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.ingredientes th {
+    background-color: yellow;
+    color: white;
+    padding: 0.75rem 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ingredientes td {
+    padding: 0.65rem 1rem;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+.ingredientes tbody tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.ingredientes tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Elaboración */
+.elaboracion p {
+    line-height: 1.6;
+    text-align: left;
+    margin-bottom: 4px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Adaptación a móviles */
+@media (max-width: 600px) {
+    main {
+        padding: 1rem;
+    }
+
+    .receta {
+        padding: 12px;
+    }
+
+    
