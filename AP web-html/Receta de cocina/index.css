@@ -133,6 +133,7 @@ footer p {
 
 /* Adaptación a móviles */
 @media (max-width: 600px) {
+
     main {
         padding: 1rem;
     }
@@ -140,5 +141,5 @@ footer p {
     .receta {
         padding: 12px;
     }
-
+}
     
