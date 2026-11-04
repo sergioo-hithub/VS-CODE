@@ -17,5 +17,3 @@ while (intentos > 0):
 if intentos < 1:
     print("Ya no te quedan mas intentos lleve el dispositivo a un técnico")
 
-
-
