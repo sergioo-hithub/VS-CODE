@@ -9,7 +9,7 @@ body {
     min-height: 100vh;
     color: #333;
 }
-/* Caebezera */
+/* Cabecera */
 header {
     background-color: #f5a623;
     color: white;
@@ -62,14 +62,14 @@ main {
     border-radius: 10px;
 }
 /* Características */
-.Características ul {
+.Caracteristicas ul {
     list-style-type: square;
     padding-left: 17px;
     text-align: left;
     margin-top: 10px;
 }
 
-.Características li {
+.Caracteristicas li {
     margin-bottom: 5px;
 }
 
@@ -79,10 +79,11 @@ main {
 }
 /* Tabla de ingredientes */
 .ingredientes h2,
-.elaboracion h2 {
+.ingredientes h2 {
     text-align: left;
     margin-bottom: 6px;
 }
+
 .ingredientes {
     margin-top: 0.5rem;
 }
@@ -91,11 +92,11 @@ main {
     border-collapse: collapse;
 }
 .ingredientes th {
-    background-color: yellow;
+    background-color: orange;
     color: white;
     padding: 0.75rem 1rem;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
 }
 
 .ingredientes td {
@@ -104,17 +105,10 @@ main {
     text-align: center;
 }
 
-.ingredientes tbody tr:nth-child(even) {
-    background-color: #fafafa;
-}
-
-.ingredientes tbody tr:last-child td {
-    border-bottom: none;
-}
-
 /* Elaboración */
-.elaboracion p {
-    line-height: 1.6;
+.elaboracion h2, 
+.elaboracion {
+    line-height: 1.8;
     text-align: left;
     margin-bottom: 4px;
 }
@@ -138,14 +132,7 @@ footer p {
         padding: 1rem;
     }
 
-    .receta {
+    .Receta {
         padding: 12px;
     }
-<<<<<<< HEAD
 }
-    
-=======
-
-}
-
->>>>>>> 226e6edcd39dbad63eb33701d8a6897dae2ed39a
