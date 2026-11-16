@@ -29,7 +29,7 @@ main {
     flex: 1;
 }
 
-.Receta {
+.receta {
     background-color: White;
     color: #333;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -40,12 +40,12 @@ main {
     padding: 10px 20px 20px;
 }
 
-.Receta h1,
-.Receta h2 {
+.receta h1,
+.receta h2 {
     color: #23c4f5;
 }
 
-.Receta h1 {
+.receta h1 {
     text-align: center;
     margin-top: 0;
     margin-bottom: 0;
@@ -73,7 +73,7 @@ main {
     margin-bottom: 5px;
 }
 
-.Receta strong {
+.receta strong {
     color: #23c4f5;
 
 }
@@ -108,7 +108,7 @@ main {
 /* Elaboración */
 .elaboracion h2, 
 .elaboracion {
-    line-height: 1.8;
+    line-height: 1.6;
     text-align: left;
     margin-bottom: 4px;
 }
@@ -132,7 +132,7 @@ footer p {
         padding: 1rem;
     }
 
-    .Receta {
+    .receta {
         padding: 12px;
     }
 }
